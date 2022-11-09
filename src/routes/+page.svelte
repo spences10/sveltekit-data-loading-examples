@@ -1,9 +1,10 @@
 <script>
 	let pages = [
+		{ route: `/coins`, name: `Coins` },
 		{ route: `/waterfall`, name: `Waterfall` },
 		{ route: `/parallel`, name: `Parallel` },
 		{ route: `/promise-all`, name: `Promise all` },
-		{ route: `/page-server`, name: `Page server` },
+		{ route: `/coins-server-side`, name: `Page server` },
 		{ route: `/coins`, name: `Page parameters` },
 	];
 </script>

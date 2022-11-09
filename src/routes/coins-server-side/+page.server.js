@@ -2,6 +2,9 @@ import { SECRET_TOKEN } from '$env/static/private';
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ fetch }) => {
+	/**
+	 * This will run browser and server side
+	 */
 	console.log('=====================');
 	console.log(SECRET_TOKEN);
 	console.log('=====================');
