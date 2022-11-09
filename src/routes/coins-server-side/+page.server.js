@@ -6,8 +6,8 @@ export const load = async ({ fetch }) => {
 	console.log(SECRET_TOKEN);
 	console.log('=====================');
 	const fetchCoins = async () => {
-		const res = await fetch('https://api.coinlore.com/api/tickers/');
-		const { data } = await res.json();
+		const req = await fetch('https://api.coinlore.com/api/tickers/');
+		const { data } = await req.json();
 		return data;
 	};
 

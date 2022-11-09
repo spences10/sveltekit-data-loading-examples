@@ -1,11 +1,11 @@
 /** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
-	const resCoins = await fetch(
+	const reqCoins = await fetch(
 		'https://api.coinlore.com/api/tickers/'
 	);
-	const { data } = await resCoins.json();
+	const { data } = await reqCoins.json();
 
-	const resCharacters = await fetch(
+	const reqCharacters = await fetch(
 		'https://rickandmortyapi.com/graphql/',
 		{
 			method: 'POST',
@@ -31,7 +31,7 @@ export const load = async ({ fetch }) => {
 		data: {
 			characters: { results },
 		},
-	} = await resCharacters.json();
+	} = await reqCharacters.json();
 
 	return {
 		currencies: data,
