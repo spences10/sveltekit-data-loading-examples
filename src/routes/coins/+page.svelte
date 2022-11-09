@@ -4,9 +4,11 @@
 	let { currencies } = data;
 </script>
 
+<a href="/">&larr; Back</a>
+
 {#each currencies as coin}
-	<a data-sveltekit-prefetch href={`/coins/${coin.id}`}>
+	<a class="link link-primary link-hover" data-sveltekit-prefetch href={`/coins/${coin.id}`}>
 		<h2>{coin.name}</h2>
 	</a>
 {/each}
-<pre>{JSON.stringify(data, null, 2)}</pre>
+

@@ -3,4 +3,6 @@
 	export let data;
 </script>
 
-<pre>{JSON.stringify(data.coin, null, 2)}</pre>
+<a href="/coins">&larr; Back</a>
+
+<pre class="mockup-code">{JSON.stringify(data, null, 2)}</pre>
