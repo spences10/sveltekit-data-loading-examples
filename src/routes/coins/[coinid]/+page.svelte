@@ -1,6 +1,5 @@
-<script>
-	/** @type {import('./$types').PageData} */
-	export let data;
+<script lang="ts">
+	export let data
 </script>
 
 <a href="/coins">&larr; Back</a>

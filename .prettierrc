@@ -1,9 +1,9 @@
 {
 	"useTabs": true,
+	"semi": false,
 	"singleQuote": true,
-	"trailingComma": "es5",
+	"trailingComma": "none",
 	"printWidth": 70,
-	"arrowParens": "avoid",
 	"proseWrap": "always",
 	"plugins": ["prettier-plugin-svelte"],
 	"pluginSearchDirs": ["."],
