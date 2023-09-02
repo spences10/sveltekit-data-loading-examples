@@ -16,8 +16,15 @@
 
 <a href="/">&larr; Back</a>
 
-{#each currencies as coin}
-	<a class="link link-primary link-hover" href={`/coins/${coin.id}`}>
-		<h2>{coin.name}</h2>
-	</a>
-{/each}
+<ul>
+	{#each currencies as coin}
+		<li>
+			<a
+				class="link link-primary link-hover"
+				href={`/coins/${coin.id}`}
+			>
+				<h2>{coin.name}</h2>
+			</a>
+		</li>
+	{/each}
+</ul>

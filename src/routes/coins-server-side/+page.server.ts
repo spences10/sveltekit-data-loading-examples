@@ -2,7 +2,7 @@ import { SECRET_TOKEN } from '$env/static/private'
 
 export const load = async ({ fetch }) => {
 	/**
-	 * This will run browser and server side
+	 * This will run only server side
 	 */
 	console.log('=====================')
 	console.log(SECRET_TOKEN)

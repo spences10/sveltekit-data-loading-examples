@@ -1,6 +1,5 @@
 import { PUBLIC_TOKEN } from '$env/static/public'
 
-/** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
 	/**
 	 * This will run browser and server side
