@@ -1,7 +1,9 @@
 <script lang="ts">
-	import '../app.css'
+	const { children } = $props();
+
+	import '../app.pcss';
 </script>
 
-<main class="prose-xl container max-w-3xl mx-auto px-4 mt-10">
-	<slot />
+<main class="container prose-xl mx-auto mt-10 max-w-3xl px-4">
+	{@render children()}
 </main>

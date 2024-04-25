@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let data
-	let { currencies } = data
+	let { data } = $props();
+	let { currencies } = data;
 
 	/**
 	 * +page.svelte gets it's `data` from a `load` function
@@ -20,7 +20,7 @@
 	{#each currencies as coin}
 		<li>
 			<a
-				class="link link-primary link-hover"
+				class="link-hover link link-primary"
 				href={`/coins/${coin.id}`}
 			>
 				<h2>{coin.name}</h2>

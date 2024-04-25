@@ -1,14 +1,14 @@
 export const load = async ({ fetch }) => {
 	const fetchCoins = async () => {
-		const req = await fetch('https://api.coinlore.com/api/tickers/')
-		const { data } = await req.json()
-		return data
-	}
+		const req = await fetch('https://api.coinlore.com/api/tickers/');
+		const { data } = await req.json();
+		return data;
+	};
 	const fetchCharacters = async () => {
 		const req = await fetch('https://rickandmortyapi.com/graphql/', {
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json'
+				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
 				query: `
@@ -21,19 +21,19 @@ export const load = async ({ fetch }) => {
 							}
 						}
 					}
-			`
-			})
-		})
+			`,
+			}),
+		});
 		const {
 			data: {
-				characters: { results }
-			}
-		} = await req.json()
-		return results
-	}
+				characters: { results },
+			},
+		} = await req.json();
+		return results;
+	};
 
 	return {
-		currencies: fetchCoins(),
-		characters: fetchCharacters()
-	}
-}
+		currencies: await fetchCoins(),
+		characters: await fetchCharacters(),
+	};
+};
