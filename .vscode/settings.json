@@ -1,10 +1,4 @@
 {
-	"cSpell.words": [
-		"coinid",
-		"daisyui",
-		"pcss",
-		"sveltejs",
-		"vite"
-	],
+	"cSpell.words": ["coinid", "daisyui", "pcss", "sveltejs", "vite"],
 	"css.validate": false
 }
